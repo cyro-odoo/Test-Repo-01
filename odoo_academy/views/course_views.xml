@@ -21,8 +21,11 @@
                             </group>
                         </group>
                         <notebook>
-                            <page string="description">
+                            <page string="Description">
                                 <field name="description"/>
+                            </page>
+                            <page string="Sessions">
+                                <field name="session_ids"/>
                             </page>
                         </notebook>
                     </sheet>
