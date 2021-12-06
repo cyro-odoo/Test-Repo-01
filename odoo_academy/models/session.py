@@ -25,8 +25,8 @@ class Session(models.Model):
                             default=1)
   
   end_date = fields.Date(string='End Date',
-                         compute='_end_start_date',
-                         inverse='_inverse_end_date',
+                         compute='_compute_end_date',
+                         inverse='_inverse_compute_end_date',
                          stored=True)
   
   @api.depends('start_date', 'duration')
