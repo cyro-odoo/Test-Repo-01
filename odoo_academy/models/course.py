@@ -27,7 +27,7 @@ class Course(models.Model):
     
     def _onchange_total_price(self):
         if self.base_price < 0.00:
-            raise UserError('Base Price Cannot Be Negative)
+            raise UserError('Base Price Cannot Be Negative')
                             
         self.total_price = self.base_price + self.additional_fee
     
