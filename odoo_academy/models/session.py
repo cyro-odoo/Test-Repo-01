@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import model, fields, api
+from odoo import models, fields, api
 
 class Session(models.Model):
   _name = 'academy.session'
