@@ -17,7 +17,7 @@
 
     'version': '0.1',
     
-    'depends': ['sales'],
+    'depends': ['base'],
     
     'data': [
         'security/academy_security.xml',
