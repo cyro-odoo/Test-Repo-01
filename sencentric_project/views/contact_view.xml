@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_only_form_view_inherit_products" model="ir.ui.view">
+        <field name="name">Partner: Add Product Page</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Products">
+                    <field name="product_ids" />
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
